@@ -1,0 +1,76 @@
+//定义变量
+@colorWhite:#fff;
+@colorBule:#00a8ff;
+
+//引入头部样式
+@import url('header.less');
+
+//工具图片大小
+.tooltip{
+    img{
+        width:100px;
+    }
+}
+//三级特色
+#feature .row{
+    &>div{
+        background:url(../../../images/feature01.png) no-repeat left center ;
+        padding-left: 80px;
+
+    };
+    &>div:nth-of-type(2){
+        background: url(../../../images/feature02.png) no-repeat left center ;
+    };
+    &>div:nth-of-type(3){
+        background: url(../../../images/feature03.png) no-repeat left center ;
+    };
+}
+
+//投资信息
+.panel{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.panel-default{
+    margin: 10px 0px 16px;
+    height: 40px;
+    line-height:40px;
+   
+    h2{
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px; 
+        height: 40px;
+        border-bottom: 2px solid @colorBule;
+      
+    }
+};
+.panel-body{
+    padding: 0px;
+
+    .list-group-item{
+    border:none;
+    border-bottom:1px dotted #ccc;
+    padding: 0px;
+    line-height: 38px;
+    a{
+          color:#555;
+        &:hover{
+        color:@colorBule;
+    }
+    }
+  
+}
+}
+//引入footer样式
+@import url('footer.less');
+
+
+//超小屏幕隐藏效果
+@media all and (max-width:520px){
+    .hideTitle{
+        display: none;
+    }
+}

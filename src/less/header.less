@@ -1,0 +1,50 @@
+//定义变量
+@colorWhite:#fff;
+@colorBule:#00a8ff;
+//重置导航下边距
+.navbar{
+    margin-bottom: 0px;
+  
+    .container{
+        .navbar-brand{
+            font-size: 24px;
+            font-style: italic;
+            color: @colorWhite;
+            &>span{
+                margin-right: 5px;
+                font-size: 18px;
+            }
+        }
+    }
+};
+// 顶部右边导航栏
+.navbar-inverse {
+    .navbar-nav {
+    li{
+        a{
+            color: @colorWhite; 
+            &:hover{
+                color:@colorBule;
+                text-decoration: underline; 
+            }
+        }
+    }
+}
+};
+
+//主导航
+.navbar-default{
+    .navbar-nav{
+     
+        li{
+            text-align: center;
+            a{
+                line-height: 37px;
+                &:hover{
+                    background-color: #f0f0f0;
+                    color:@colorBule;
+                }
+            }
+        }
+    }
+}

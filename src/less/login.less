@@ -1,0 +1,35 @@
+//定义变量
+@colorWhite:#fff;
+@colorBule:#00a8ff;
+
+
+//重置导航下边距
+//引入模板样式
+@import url('template.less');
+
+.LoginNavbar{
+    margin-bottom: 15px;
+    height: 70px;
+    line-height: 40px;
+}
+
+.LoginPlace{
+    color:@colorBule;
+    font-size: 24px; 
+    font-weight: bold;
+    margin: 10px 0px 0px 6px; 
+    display: inline-block;
+}
+.form-horizontal{
+    width: 45%;
+    margin: 0 auto;
+    &>.form-group:nth-child(1){
+        margin-top: 15px;
+    }
+}
+.fs18{
+    font-size: 18px;
+}
+.pdl10{
+    padding-left: 20px;
+}
