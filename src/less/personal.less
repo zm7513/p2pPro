@@ -1,0 +1,140 @@
+//定义变量
+@colorWhite:#fff;
+@colorBule:#00a8ff;
+
+//重置导航下边距
+//引入模板样式
+@import url('template.less');
+
+.RegisterNavbar{
+    margin-bottom: 15px;
+    height: 70px;
+    line-height: 40px;
+}
+
+.RegisterPlace{
+    color:@colorBule;
+    font-size: 24px; 
+    font-weight: bold;
+    margin: 10px 0px 0px 6px; 
+    display: inline-block;
+};
+.navbar-default{
+    margin-bottom: 10px;
+}
+
+
+   #mainContent{
+    #btnOnOff{
+        display: none;
+    }
+}
+.panel-group{
+    .panel{
+        .panel-heading{
+            h4{
+                a{
+                    text-decoration: none;
+                    color:#337ab7;
+                    font-size: 14px;
+                }
+            }
+        }
+        .panel-collapse {
+            .panel-body{
+                ul{
+                    list-style: none;
+                    li{
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+};
+.panel-group .panel+.panel{
+margin: 0px;
+};
+.el-head-img{
+    width: 94px;
+    height: 94px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.el-head{
+    margin: 5px 0px 0px 15px;
+}
+.el-account-info{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin-left: 10px;
+}
+
+#rowMoney{
+    margin:15px 2px;
+    font-size: 22px;
+}
+#myButton{
+    text-align: center;
+    width: 400px;
+    margin: 30px auto 0px auto;
+}
+#myIcon{
+    
+    .pull-left{
+        img{
+           margin-top: 10px;
+          
+           }
+           h5{
+            font-weight: bold;
+        }
+     
+            margin-left: 10px;
+       
+    }
+   #box{
+        padding:40px 0px 0px 10px;
+        box-sizing: border-box;
+        &>p{
+            margin: 10px 0px 10px 0px;
+            padding-left: 13px;
+        }
+    }
+}
+@media all and (max-width:768px){
+    #personal{
+        height: 870px;
+        position: relative;
+        left: 0px;
+        transition: all 1s;
+        #myIcon #box{
+            padding: 15px 0 0 10px;
+            box-sizing: border-box;
+        }
+
+        #leftTreeMenu{
+            position: absolute;
+            left: 0px;
+        }
+        #mainContent{
+            position: absolute;
+            right: -50%;
+            #btnOnOff{
+                position: absolute;
+                top: 0px;
+                z-index: 1000;
+                display: inline-block
+            }
+        }
+    }
+    #personal.active{
+        left: -50%; //菜单关闭}
+    }
+}
+
+
+body{
+    overflow-x: hidden;
+}

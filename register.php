@@ -9,8 +9,11 @@
 
   <!-- 引入bootstrap样式 -->
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  <!-- 引入bootstrapValidator验证样式 -->
+  <link rel="stylesheet" href="./lib/bootstrapValidator/css/bootstrapValidator.min.css">
   <!-- 引入自定义样式 -->
   <link rel="stylesheet" href="./dist/css/minCss/register.min.css">
+
 </head>
 
 <body>
@@ -36,35 +39,35 @@
     <div class="panel panel-default">
       <div class="panel-heading">用户注册</div>
       <div class="panel-body">
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="regForm" method="post">
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-3 control-label">用户名:</label>
             <div class="col-sm-9">
-              <input type="email" name="username" class="form-control"  placeholder="请输入用户名">
+              <input type="text" name="username" class="form-control"  placeholder="请输入用户名">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">密码:</label>
+            <label  class="col-sm-3 control-label">密码:</label>
             <div class="col-sm-9">
               <input type="password" name="password" class="form-control" placeholder="请输入密码">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">确认密码:</label>
+            <label  class="col-sm-3 control-label">确认密码:</label>
             <div class="col-sm-9">
-              <input type="password" name="ReplaePassword" class="form-control">
+              <input type="password" name="replaePassword" class="form-control">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">电话号码:</label>
+            <label  class="col-sm-3 control-label">电话号码:</label>
             <div class="col-sm-9">
-              <input type="password" name="mobile" class="form-control">
+              <input type="text" name="mobile" class="form-control">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-3 control-label">邮箱:</label>
+            <label class="col-sm-3 control-label">邮箱:</label>
             <div class="col-sm-9">
-              <input type="password" name="email" class="form-control">
+              <input type="text" name="email" class="form-control">
             </div>
           </div>
          
@@ -88,7 +91,10 @@ require_once('footer.php')
 <script src="./lib/jquery/jquery.min.js"></script>
 <!-- 引入bootstrap.js -->
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+ <!-- 引入bootstrapValidator的JS库 -->
+<script src="./lib/bootstrapValidator/js/bootstrapValidator.min.js"></script>
 <!-- 引入自定义效果 -->
 <script src="./dist/js/p2p.min.js"></script>
-
+<!-- 引入regiter验证 -->
+<script src="./src/js/formcheck.js"></script>
 </html>
